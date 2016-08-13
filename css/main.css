@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700);
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 10px;
+    color: #272c2c;
+    background: #AAFFA9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #AAFFA9, #11FFBD);
+    background: linear-gradient(to left, #AAFFA9, #11FFBD);
+
+}
+
+h1 {
+    margin: 4rem 1rem;
+}
+
+h1,
+#author,
+a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+p,
+h1 span {
+    font-family: 'Lora', serif;
+}
+
+h1 span {
+    text-transform: lowercase;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.quote-box {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Lora', serif;
+    margin-top: 2.5rem;
+}
+
+#quote-content:before {
+    content:'\201c';
+    left: -5.5rem;
+}
+
+#quote-content:after {
+    content: '\201d';
+    right: -3.75rem;    
+}
+
+#quote-content:before, 
+#quote-content:after {
+    position: absolute;
+    font-size: 11rem;
+    top: -2rem;
+    color: #272c2c;
+}
+
+#quote-content,
+#author {
+    font-size: 2rem;
+}
+
+#quote-content {
+    color: #FFF;
+}
+
+.buttons-holder {
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+}
+
+#get-another-quote:link,
+#get-another-quote:visited {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 0.3rem solid #272c2c;
+    padding: 1rem 2rem;
+    -webkit-transition: color 0.5s, border-color 0.5s;
+    transition: color 0.5s, border-color 0.5s;
+    
+}
+
+#get-another-quote:hover,
+#get-another-quote:active {
+    color: #272c2c;
+    border-color: #fff;
+}
+
+.buttons-holder div {
+    margin-top: 2rem;
+}
+
+#tweet {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+#tweet:link,
+#tweet:visited {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 0.5s, border-color 0.5s;
+    transition: color 0.5s, border-color 0.5s;
+}
+
+#tweet:hover,
+#tweet:active {
+    color: #55acee;
+    
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+    html { font-size: 14px;}
+    
+    #quote-content:before, 
+    #quote-content:after {
+        font-size: 10rem;
+    }
+    
+    #quote-content:before { left: -4rem;}
+
+}
+
+@media only screen and (max-width: 544px) {
+    html { font-size: 12px;}
+    
+    #quote-content:before, 
+    #quote-content:after {
+        font-size: 8rem;
+    }
+    
+    #quote-content:before { left: -3.2rem;}
+
+    #quote-content:after { right: -3rem;}
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
